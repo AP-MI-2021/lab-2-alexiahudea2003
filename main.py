@@ -4,7 +4,7 @@ def get_largest_prime_below(n):
 	for i in range (n-1,1,-1):
 		ok=True
 		for j in range (2,i//2,1):
-			if I%j==0:
+			if i%j==0:
 				ok=False
 				break
 		if ok==True:

@@ -10,7 +10,7 @@ def get_largest_prime_below(n):
 		if ok==True:
 			return i
 			break
-def test_get_largest_prime_below(n):
+def test_get_largest_prime_below():
 	assert get_largesr_prime_below(8) == 7
 	assert get_largest_prime_below(12) == 11
  test_get_largest_prime_below()

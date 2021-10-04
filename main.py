@@ -56,7 +56,7 @@ y=int(input("Care este al doilea numar?"))
 
 
 def main():
-	print(get_largest_prime_below(x)
+	print(get_largest_prime_below(x))
 	print(is_palindrome(x))
 	print(get_n_choose_k(x,y))
 	

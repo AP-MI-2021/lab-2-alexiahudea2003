@@ -56,7 +56,7 @@ y=int(input("Care este al doilea numar?"))
 print(get_n_choose_k(x,y))
 
 def main():
-print("introduceti datele:")
+	print("introduceti datele:")
 	
 if __name__ == '__main__':
   main()

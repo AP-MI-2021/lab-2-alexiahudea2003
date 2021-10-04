@@ -15,7 +15,7 @@ def test_get_largest_prime_below():
 	assert get_largest_prime_below(12) == 11
 	assert get_largest_prime_below(30) == 29
 x=int(input("Care este numarul tau?"))
-print(get_largest_prime_below(x))
+
 	
 #Problema 2
 

@@ -35,7 +35,7 @@ def test_is_palindrome():
 	assert is_palindrome(77) == True
 	assert is_palindrome(121) == True
 x=int(input("Care este numarul tau?"))
-print(is_palindrome(x))
+
 
 		    
 #Problema 3
@@ -53,10 +53,12 @@ def test_get_n_choose_k():
 	assert get_n_choose_k(6,4) == 15
 x=int(input("Care este primul numar?"))
 y=int(input("Care este al doilea numar?"))
-print(get_n_choose_k(x,y))
+
 
 def main():
-	print("introduceti datele:")
+	print(get_largest_prime_below(x)
+	print(is_palindrome(x))
+	print(get_n_choose_k(x,y))
 	
 if __name__ == '__main__':
 	main()

@@ -14,11 +14,6 @@ def test_get_largest_prime_below():
 	assert get_largest_prime_below(8) == 7
 	assert get_largest_prime_below(12) == 11
 	assert get_largest_prime_below(30) == 29
-def main():
-	x=int(input("Care este numarul tau?"))
-	print(get_largest_prime_below(x))
-if __name__ == '__main__':
-  main()
 
 #Problema 2
 
@@ -30,9 +25,9 @@ def is_palindrome(n):
 		oglindit=oglindit*10+c
 		n=n//10
 	if y==oglindit:
-		return print(True)
+		return True
 	else:
-		return print(False)
+		return False
 def test_is_palindrome():
 	assert is_palindrome(76) == False
 	assert is_palindrome(77) == True

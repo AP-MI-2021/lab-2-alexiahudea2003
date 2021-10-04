@@ -11,15 +11,14 @@ def get_largest_prime_below(n):
 			return i
 			break
 def test_get_largest_prime_below():
-	assert get_largesr_prime_below(8) == 7
+	assert get_largest_prime_below(8) == 7
 	assert get_largest_prime_below(12) == 11
 	assert get_largest_prime_below(30) == 29
 def main():
-	x=int(input("Care este numarul tau?)
+	x=int(input("Care este numarul tau?"))
 	print(get_largest_prime_below(x))
 if __name__ == '__main__':
   main()
-
 
 #Problema 2
 
@@ -37,38 +36,32 @@ def is_palindrome(n):
 def test_is_palindrome():
 	assert is_palindrome(76) == False
 	assert is_palindrome(77) == True
-	assert is_palindrome(121) == True 
+	assert is_palindrome(121) == True
 def main():
-	x=int(input("Care este numarul tau?)
-	print(get_largest_prime_below(x))
+	x=int(input("Care este numarul tau?"))
+	print(is_palindrome(x))
 if __name__ == '__main__':
   main()
 	
 		    
 #Problema 3
 		    
-def get_base_2(n):
-	if n==0
-		return "0"
-	else:
-		n=int(n)
-		baza=2
-		p=1
-		y=0
-		while n>=1:
-		    	m=n%2
-			y=y+m*p
-		   	n=n//2
-		    	p=p*10
-		return y
-def test_get_base_2():
-	assert get_base_2(4) == 100
-	assert get_base_2(5) == 101
-	assert get_base_2(0) == 0 
+def factor(n):
+	factor=1
+	for i in range(1,n+1):
+		factor=factor*i
+	return factor
+def get_n_choose_k(n,k):
+	return (factor(n)/(factor(k)*factor(n-k)))
+def test_get_n_choose_k():
+	assert get_n_choose_k(3,2) == 3
+	assert get_n_choose_k(2,1) == 2
+	assert get_n_choose_k(6,4) == 15
 def main():
-	x=int(input("Care este numarul tau?)
-	print(get_base_2(x))
+	x=int(input("Care este primul numar?"))
+	y=int(input("Care este al doilea numar?"))
+	print(get_n_choose_k(x,y))
 if __name__ == '__main__':
   main()
-	
+
 

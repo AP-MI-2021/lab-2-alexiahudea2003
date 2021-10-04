@@ -59,6 +59,6 @@ def main():
 	print("introduceti datele:")
 	
 if __name__ == '__main__':
-  main()
+	main()
 
 

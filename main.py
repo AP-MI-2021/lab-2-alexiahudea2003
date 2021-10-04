@@ -14,7 +14,9 @@ def test_get_largest_prime_below():
 	assert get_largest_prime_below(8) == 7
 	assert get_largest_prime_below(12) == 11
 	assert get_largest_prime_below(30) == 29
-
+x=int(input("Care este numarul tau?"))
+print(get_largest_prime_below(x))
+	
 #Problema 2
 
 def is_palindrome(n):
@@ -32,12 +34,9 @@ def test_is_palindrome():
 	assert is_palindrome(76) == False
 	assert is_palindrome(77) == True
 	assert is_palindrome(121) == True
-def main():
-	x=int(input("Care este numarul tau?"))
-	print(is_palindrome(x))
-if __name__ == '__main__':
-  main()
-	
+x=int(input("Care este numarul tau?"))
+print(is_palindrome(x))
+
 		    
 #Problema 3
 		    
@@ -52,10 +51,13 @@ def test_get_n_choose_k():
 	assert get_n_choose_k(3,2) == 3
 	assert get_n_choose_k(2,1) == 2
 	assert get_n_choose_k(6,4) == 15
+x=int(input("Care este primul numar?"))
+y=int(input("Care este al doilea numar?"))
+print(get_n_choose_k(x,y))
+
 def main():
-	x=int(input("Care este primul numar?"))
-	y=int(input("Care este al doilea numar?"))
-	print(get_n_choose_k(x,y))
+print("introduceti datele:")
+	
 if __name__ == '__main__':
   main()
 
